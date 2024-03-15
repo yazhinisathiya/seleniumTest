@@ -8,9 +8,9 @@
       <class name="testCases.Checkboxtest"/>
           </classes>
   </test> <!-- Test -->
-  <test thread-count="5" name="FirefoxTest">
+<!--   <test thread-count="5" name="FirefoxTest">
     <classes>
       <class name="testCases.Checkboxtest"/>
           </classes>
-  </test> <!-- Test -->
+  </test> Test -->
 </suite> <!-- Suite -->

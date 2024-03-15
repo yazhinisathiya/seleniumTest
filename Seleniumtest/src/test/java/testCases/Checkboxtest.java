@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import utilities.Screenshot;
 
@@ -58,10 +59,13 @@ public class Checkboxtest {
 	}
 	@Test
 	public void testcase1() {
+		SoftAssert softAssertion= new SoftAssert();
 		driver.get("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
 		String title=driver.getTitle();
-		String expectedTitle="Selenium Easy - Checkbox demo for automation using selenium";
-		Assert.assertEquals(title, expectedTitle);	
+		String expectedTitle="Selenium";
+		softAssertion.assertEquals(title, expectedTitle);
+	//	Assert.assertEquals(title, expectedTitle);	
+		softAssertion.assertAll();
 		
 	}
 
@@ -80,7 +84,7 @@ public class Checkboxtest {
 	 */
 	@AfterMethod
 	public void screenshottest() {
-		Screenshot.captureScreenshot(driver, "checkboxtesting");
+		//Screenshot.captureScreenshot(driver, "checkboxtesting");
 	}
 	@AfterClass
 	public void tearDown() {

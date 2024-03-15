@@ -5,11 +5,9 @@
     <classes>
       <class name="testCases.Checkboxtest">
         <methods>
-          <include name="testcase3"/>
           <include name="setup"/>
-          <include name="testcase2"/>
-          <include name="screenshottest"/>
           <include name="tearDown"/>
+          <include name="screenshottest"/>
           <include name="testcase1"/>
         </methods>
       </class> <!-- testCases.Checkboxtest -->
