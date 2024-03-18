@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadExcelExample {
 
-	public static void main(String[] args) throws IOException {
+	public Object [] [] readExcelData() throws IOException{
 		
 		String filePath="./Data1.xlsx";
 		
@@ -29,16 +29,19 @@ public class ReadExcelExample {
 		
 		int columnCount = sheet1.getRow(0).getLastCellNum();
 		
-		 for (int i = 0; i < rowCount+1; i++) {
-		        Row row = sheet1.getRow(i);
+		 Object[][] data = new Object[rowCount][columnCount];
+		
+		 for (int i = 0; i < rowCount; i++) {
+		        Row row = sheet1.getRow(i+1);
 		        for (int j = 0; j < columnCount; j++) {
 		        	
-		        	System.out.println(row.getCell(j).toString());
+		        	//System.out.println(row.getCell(j).toString());
 		        	
 		        	
-		          //  data[i][j] = row.getCell(j).toString();
+		            data[i][j] = row.getCell(j).toString();
 		        }
 		    }
+		return data;
 		
 
 	}
