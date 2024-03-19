@@ -31,5 +31,9 @@ public class DataProviderExample {
 		  System.out.println(n1 + " " + n2 + ""+n3);
 		 }
 	
+		 @Test(dataProvider = "test1")
+		 public void verifyData2(String n1, String n2, String n3) {
+		  System.out.println(n1 + " " + n2 + ""+n3);
+		 }
 
 }

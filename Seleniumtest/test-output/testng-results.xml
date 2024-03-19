@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-18T11:29:33 IST" name="Default suite" finished-at="2024-03-18T11:29:35 IST" duration-ms="1963">
+  <suite started-at="2024-03-19T09:52:34 IST" name="Default suite" finished-at="2024-03-19T09:52:36 IST" duration-ms="1456">
     <groups>
     </groups>
-    <test started-at="2024-03-18T11:29:33 IST" name="Default test" finished-at="2024-03-18T11:29:35 IST" duration-ms="1963">
-      <class name="testCases.UsingPropertiesTest">
-        <test-method signature="Testcase1()[pri:0, instance:testCases.UsingPropertiesTest@10e31a9a]" started-at="2024-03-18T11:29:34 IST" name="Testcase1" finished-at="2024-03-18T11:29:35 IST" duration-ms="128" status="PASS">
+    <test started-at="2024-03-19T09:52:34 IST" name="Default test" finished-at="2024-03-19T09:52:36 IST" duration-ms="1456">
+      <class name="testCases.CsvDataProvider">
+        <test-method signature="testcase1(java.lang.String,java.lang.String)[pri:0, instance:testCases.CsvDataProvider@1a482e36]" started-at="2024-03-19T09:52:36 IST" name="testcase1" data-provider="csvData" finished-at="2024-03-19T09:52:36 IST" duration-ms="59" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Age]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase1 -->
-      </class> <!-- testCases.UsingPropertiesTest -->
+        </test-method> <!-- testcase1 -->
+        <test-method signature="testcase1(java.lang.String,java.lang.String)[pri:0, instance:testCases.CsvDataProvider@1a482e36]" started-at="2024-03-19T09:52:36 IST" name="testcase1" data-provider="csvData" finished-at="2024-03-19T09:52:36 IST" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Venkatesh"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[38]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+      </class> <!-- testCases.CsvDataProvider -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
