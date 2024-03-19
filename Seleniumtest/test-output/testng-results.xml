@@ -2,44 +2,42 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-19T09:52:34 IST" name="Default suite" finished-at="2024-03-19T09:52:36 IST" duration-ms="1456">
+  <suite started-at="2024-03-19T12:25:13 IST" name="Default suite" finished-at="2024-03-19T12:27:14 IST" duration-ms="121500">
     <groups>
     </groups>
-    <test started-at="2024-03-19T09:52:34 IST" name="Default test" finished-at="2024-03-19T09:52:36 IST" duration-ms="1456">
-      <class name="testCases.CsvDataProvider">
-        <test-method signature="testcase1(java.lang.String,java.lang.String)[pri:0, instance:testCases.CsvDataProvider@1a482e36]" started-at="2024-03-19T09:52:36 IST" name="testcase1" data-provider="csvData" finished-at="2024-03-19T09:52:36 IST" duration-ms="59" status="PASS">
+    <test started-at="2024-03-19T12:25:13 IST" name="Default test" finished-at="2024-03-19T12:27:14 IST" duration-ms="121500">
+      <class name="testCases.GoogleSearchTestPage">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testCases.GoogleSearchTestPage@639c2c1d]" started-at="2024-03-19T12:25:13 IST" name="Setup" finished-at="2024-03-19T12:25:47 IST" duration-ms="34495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="TestCase1(java.lang.String)[pri:0, instance:testCases.GoogleSearchTestPage@639c2c1d]" started-at="2024-03-19T12:25:59 IST" name="TestCase1" data-provider="test1" finished-at="2024-03-19T12:26:27 IST" duration-ms="27712" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Name]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ Age]]>
+                <![CDATA[TestNg]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase1 -->
-        <test-method signature="testcase1(java.lang.String,java.lang.String)[pri:0, instance:testCases.CsvDataProvider@1a482e36]" started-at="2024-03-19T09:52:36 IST" name="testcase1" data-provider="csvData" finished-at="2024-03-19T09:52:36 IST" duration-ms="46" status="PASS">
+        </test-method> <!-- TestCase1 -->
+        <test-method signature="TestCase1(java.lang.String)[pri:0, instance:testCases.GoogleSearchTestPage@639c2c1d]" started-at="2024-03-19T12:26:27 IST" name="TestCase1" data-provider="test1" finished-at="2024-03-19T12:27:04 IST" duration-ms="36739" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Venkatesh"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[38]]>
+                <![CDATA[Selenium]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase1 -->
-      </class> <!-- testCases.CsvDataProvider -->
+        </test-method> <!-- TestCase1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.GoogleSearchTestPage@639c2c1d]" started-at="2024-03-19T12:27:04 IST" name="tearDown" finished-at="2024-03-19T12:27:14 IST" duration-ms="10190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.GoogleSearchTestPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

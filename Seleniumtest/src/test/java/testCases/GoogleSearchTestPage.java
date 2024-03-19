@@ -12,6 +12,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pages.GoogleSearchPage;
+import pages.GoogleSearchPageFactory;
 import utilities.ReadExcelExample;
 
 public class GoogleSearchTestPage {
@@ -37,10 +38,14 @@ public class GoogleSearchTestPage {
 	}
 	@Test(dataProvider="test1")
 	public void TestCase1(String keyword) {
-		GoogleSearchPage browser= new GoogleSearchPage(driver);
-		browser.NavigateGoogleSearchPage();
-		browser.typeSearchKeyword(keyword);
+		/*
+		 * GoogleSearchPage browser= new GoogleSearchPage(driver);
+		 * browser.NavigateGoogleSearchPage(); browser.typeSearchKeyword(keyword);
+		 */
 		
+		GoogleSearchPageFactory browser= new GoogleSearchPageFactory(driver);
+		browser.NavigateGoogleSearchPage(); 
+		browser.typeSearchKeyword(keyword);
 		
 		
 	//	driver.get("https://www.google.com");
