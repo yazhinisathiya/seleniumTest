@@ -22,7 +22,7 @@ public class DataProviderExample {
 		public Object[][] createData1() throws IOException {
 		 
 		 ReadExcelExample read= new ReadExcelExample();
-		 Object [] [] data=read.readExcelData();
+		 Object [] [] data=read.readExcelData("./Data1.xlsx", "sheet2");
 			return data;
 		 
 		}

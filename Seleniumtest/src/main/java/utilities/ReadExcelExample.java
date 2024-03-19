@@ -11,11 +11,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadExcelExample {
 
-	public Object [] [] readExcelData() throws IOException{
+	public Object [] [] readExcelData(String filePath,String sheetName) throws IOException{
 		
-		String filePath="./Data1.xlsx";
+	//	String filePath="./Data1.xlsx";
 		
-		String sheetName="Sheet1";
+	//	String sheetName="Sheet1";
 		
 		File src= new File(filePath);
 		

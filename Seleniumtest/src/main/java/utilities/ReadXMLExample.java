@@ -17,7 +17,8 @@ public class ReadXMLExample {
 		SAXReader saxReader = new SAXReader();
 		Document document = saxReader.read(fis);
 		
-		String sourceId=document.selectSingleNode("//Bus_Search/source").getText();
+		//String sourceId=document.selectSingleNode("//Bus_Search/source").getText();
+		String sourceId=document.selectNodes("//Bus_Search/source").get(0).getText();
 		System.out.println(sourceId);
 		
 		/*
