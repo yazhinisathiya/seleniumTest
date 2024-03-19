@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -13,6 +14,7 @@ import org.testng.annotations.Test;
 
 import pages.GoogleSearchPage;
 import pages.GoogleSearchPageFactory;
+import utilities.MyRetry;
 import utilities.ReadExcelExample;
 
 public class GoogleSearchTestPage {
@@ -36,7 +38,7 @@ public class GoogleSearchTestPage {
 		
 		
 	}
-	@Test(dataProvider="test1")
+	@Test(dataProvider="test1",retryAnalyzer = MyRetry.class)
 	public void TestCase1(String keyword) {
 		/*
 		 * GoogleSearchPage browser= new GoogleSearchPage(driver);
@@ -45,7 +47,10 @@ public class GoogleSearchTestPage {
 		
 		GoogleSearchPageFactory browser= new GoogleSearchPageFactory(driver);
 		browser.NavigateGoogleSearchPage(); 
-		browser.typeSearchKeyword(keyword);
+		String title=driver.getTitle();
+		Assert.assertEquals(title, "Google1");
+	//	browser.typeSearchKeyword(keyword);
+		
 		
 		
 	//	driver.get("https://www.google.com");
