@@ -38,7 +38,7 @@ public class GoogleSearchTestPage {
 		
 		
 	}
-	@Test
+	@Test(dataProvider = "test1")
 	public void TestCase1(String keyword) {
 		/*
 		 * GoogleSearchPage browser= new GoogleSearchPage(driver);
