@@ -38,13 +38,13 @@ public class GoogleSearchTestPage {
 		
 		
 	}
-	@Test(dataProvider="test1",retryAnalyzer = MyRetry.class)
+	@Test
 	public void TestCase1(String keyword) {
 		/*
 		 * GoogleSearchPage browser= new GoogleSearchPage(driver);
 		 * browser.NavigateGoogleSearchPage(); browser.typeSearchKeyword(keyword);
 		 */
-		
+		//Assert.fail();
 		GoogleSearchPageFactory browser= new GoogleSearchPageFactory(driver);
 		browser.NavigateGoogleSearchPage(); 
 		String title=driver.getTitle();

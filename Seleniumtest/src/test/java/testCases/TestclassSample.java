@@ -7,8 +7,13 @@ import utilities.MyRetry;
 
 public class TestclassSample {
 
-  @Test()
+  @Test
   public void test2() {
     Assert.fail();
+	//  Assert.assert
+  }
+  @Test
+  public void test1() {
+	  Assert.fail();
   }
 }
