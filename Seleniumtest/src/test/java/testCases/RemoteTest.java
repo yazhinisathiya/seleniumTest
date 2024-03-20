@@ -23,11 +23,8 @@ public class RemoteTest {
 	public void remoteTest() throws MalformedURLException{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--start-maximized");
-		 DesiredCapabilities caps = new DesiredCapabilities();
+		options.setBrowserVersion("121");
 		 
-		 caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-		 caps.setCapability(CapabilityType.BROWSER_VERSION, "121");
-		 caps.setCapability(ChromeOptions.CAPABILITY, options);
 		
 		/*
 		 * DesiredCapabilities caps = new DesiredCapabilities();
@@ -39,7 +36,7 @@ public class RemoteTest {
 
 		WebDriver driver=null;
 		
-			driver = new RemoteWebDriver(URI.create("http://192.168.40.1:4444").toURL(),caps);
+			driver = new RemoteWebDriver(URI.create("http://192.168.40.1:4444").toURL(),options);
 		
 			
 			driver.get("https://www.google.com");
