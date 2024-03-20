@@ -44,11 +44,11 @@ public class GoogleSearchTestPage {
 		 * GoogleSearchPage browser= new GoogleSearchPage(driver);
 		 * browser.NavigateGoogleSearchPage(); browser.typeSearchKeyword(keyword);
 		 */
-		Assert.fail();
-		GoogleSearchPageFactory browser= new GoogleSearchPageFactory(driver);
+	//	Assert.fail();
+	GoogleSearchPageFactory browser= new GoogleSearchPageFactory(driver);
 		browser.NavigateGoogleSearchPage(); 
 		String title=driver.getTitle();
-		Assert.assertEquals(title, "Google1");
+	Assert.assertEquals(title, "Google1");
 	//	browser.typeSearchKeyword(keyword);
 		
 		
