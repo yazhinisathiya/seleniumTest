@@ -10,7 +10,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="Setup"/>
-          <include name="TestCase1"/>
+          <include name="TestCase1" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- testCases.GoogleSearchTestPage -->
     </classes>
