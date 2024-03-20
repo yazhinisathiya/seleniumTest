@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.GoogleSearchTestPage">
+      <class name="testCases.RemoteTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="Setup"/>
-          <include name="TestCase1" invocation-numbers="0 1"/>
+          <include name="remoteTest"/>
         </methods>
-      </class> <!-- testCases.GoogleSearchTestPage -->
+      </class> <!-- testCases.RemoteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

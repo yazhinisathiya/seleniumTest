@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 /*import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -21,13 +23,23 @@ public class RemoteTest {
 	public void remoteTest() throws MalformedURLException{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--start-maximized");
+		 DesiredCapabilities caps = new DesiredCapabilities();
+		 
+		 caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+		 caps.setCapability(CapabilityType.BROWSER_VERSION, "121");
+		 caps.setCapability(ChromeOptions.CAPABILITY, options);
+		
+		/*
+		 * DesiredCapabilities caps = new DesiredCapabilities();
+		 * caps.setCapability(CapabilityType.BROWSER_NAME,"Firefox");
+		 */
 		// WebDriver driver = new ChromeDriver(options);
 
 		// driver.get("https://www.google.com");
 
 		WebDriver driver=null;
 		
-			driver = new RemoteWebDriver(URI.create("http://192.168.40.1:4444").toURL(),options);
+			driver = new RemoteWebDriver(URI.create("http://192.168.40.1:4444").toURL(),caps);
 		
 			
 			driver.get("https://www.google.com");
