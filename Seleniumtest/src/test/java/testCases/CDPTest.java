@@ -32,7 +32,7 @@ public class CDPTest {
 		devTools.createSession();
 	}
 
-  @Test
+ // @Test
 	public void deviceModeTest() {
 		Map deviceMetrics = new HashMap() {
 			{
@@ -60,7 +60,7 @@ public class CDPTest {
 		driver.get("https://oldnavy.gap.com/stores");
 	}
 
-	//@Test
+//	@Test
 	public void captureNWTrafficTest() {
 //		Map deviceMetrics = new HashMap() {
 //			{
@@ -80,6 +80,8 @@ public class CDPTest {
 						+ " With method : "
 						+ entry.getRequest().getMethod() + "\n");
 				entry.getRequest().getMethod();
+				
+				
 			}
 		});
 		driver.get("https://www.selenium.dev/");
@@ -87,7 +89,7 @@ public class CDPTest {
 
 	}
 
-// @Test
+ //@Test
 	public void captureConsoleLogTest() {
 		devTools.send(Log.enable());
 		devTools.addListener(Log.entryAdded(), new Consumer<LogEntry>() {
@@ -96,10 +98,10 @@ public class CDPTest {
 				System.out.println("level: " + logEntry.getLevel());
 			}
 		});
-		driver.get("http://the-internet.herokuapp.com/");
+		driver.get("https://www.google.com");
 	}
 
- // @Test
+  @Test
 	public void basicAuthTest() {
 		devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 		Map<String, Object> headers = new HashMap();
