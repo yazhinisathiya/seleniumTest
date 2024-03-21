@@ -6,7 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features = "src//test//resources//Features"
 ,glue = "stepDefs",
 monochrome=true,
-plugin = {"pretty"}
+dryRun = false,
+plugin = {"pretty","html:target\\HtmlReport.html"}
 )
 public class UserAuthTest extends AbstractTestNGCucumberTests {
 
