@@ -8,9 +8,11 @@ import io.cucumber.testng.CucumberOptions;
 monochrome=true,
 dryRun = false,
 plugin = {"pretty",
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+}
 		//"json:target\\JsonReport.json"
 //}
-		"html:target\\HtmlReport.html"}
+		//"html:target\\HtmlReport.html"}
 )
 public class UserAuthTest extends AbstractTestNGCucumberTests {
 
