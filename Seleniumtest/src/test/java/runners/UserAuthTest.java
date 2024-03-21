@@ -7,7 +7,10 @@ import io.cucumber.testng.CucumberOptions;
 ,glue = "stepDefs",
 monochrome=true,
 dryRun = false,
-plugin = {"pretty","html:target\\HtmlReport.html"}
+plugin = {"pretty",
+		//"json:target\\JsonReport.json"
+//}
+		"html:target\\HtmlReport.html"}
 )
 public class UserAuthTest extends AbstractTestNGCucumberTests {
 
