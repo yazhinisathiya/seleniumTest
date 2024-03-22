@@ -2,6 +2,7 @@ Feature: Google Search
   Scenario: Searching on Google with DataTable as Map
     Given I am on the Google search page
     When I search for the following terms and language
+      | Search Term | Language |
       | Java        | EN       |
       | Cucumber    | EN       |
       | Selenium    | EN       |
