@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bus_Search>
+	<source>src</source>
+	<destination>dest</destination>
+	<date>//*[@id=\"onwardCal\"]/div/div[2]/div/div/div[3]/div/span/div/span[text()='22']</date>
+</Bus_Search>
