@@ -3,7 +3,7 @@ package runners;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = "src//test//resources//Features//GoogleSearchDataTable.feature"
+@CucumberOptions(features = "src//test//resources//Features//GoogleSearchDataTableMap.feature"
 ,glue = "stepDefs",
 monochrome=true,
 dryRun = false
