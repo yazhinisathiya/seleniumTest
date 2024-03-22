@@ -1,5 +1,7 @@
 package stepDefs;
 
+import static org.testng.Assert.fail;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -40,13 +42,14 @@ public class Login {
 	public void i_should_be_redirected_to_the_dashboard() {
 		String title=driver.getTitle();
 		
-		Assert.assertEquals(title, "Swag Labs");
+		Assert.assertEquals(title, "Swag Labs1");
 		//System.out.println("I should be redirected to the dashboard");
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new io.cucumber.java.PendingException();
 	}
 	@And("I should see a welcome message")
 	public void i_should_see_a_welcome_message() {
+		
 		System.out.println("I should see a welcome message");
 		driver.quit();
 	    // Write code here that turns the phrase above into concrete actions
